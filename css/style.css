@@ -160,3 +160,36 @@ header .hamburger {
   color: var(--secondary-color);
   border: 1px solid var(--bg3);
 }
+
+/* podcasr-section */
+.podcast-section{
+    /* border: 2px solid red; */
+}
+.podcast-section h2 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.podcast-section hr {
+  margin: 80px 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.podcast-section .section-content {
+  text-align: center;
+  margin-top: 50px;
+}
+.podcast-section .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.podcast-section .cards h2,
+.podcast-section .cards i {
+  color: var(--secondary-color);
+}
+.podcast-section .cards h3{
+  font-weight: 400;
+  font-size: 16px;
+}
