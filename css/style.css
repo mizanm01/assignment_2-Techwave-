@@ -3,6 +3,7 @@
   --secondary-color: rgba(0, 255, 136, 1);
   --color-3: rgba(26, 11, 46, 1);
   --color-4: rgba(83, 60, 114, 1);
+  --color-5: rgba(65, 37, 103, 1);
   --primary-bg: rgba(26, 11, 46, 1);
   --secondary-bg: rgba(53, 17, 101, 0.4);
   --bg3: rgba(0, 255, 136, 1);
@@ -48,13 +49,10 @@ body {
   border: none;
   border-radius: 10000px;
 }
-button:hover{
+button:hover {
   cursor: pointer;
 }
 /* header */
-header {
-  /* border: 1px solid rgb(255, 0, 0); */
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -100,8 +98,8 @@ header .hamburger {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* margin-top: 100px; */
   padding: 100px 0;
+  border-top: 1px solid var(--color-5);
 }
 .hero-section .hero-image {
   text-align: center;
@@ -192,6 +190,7 @@ header .hamburger {
 .podcast-section .cards h2,
 .podcast-section .cards i {
   color: var(--secondary-color);
+  font-size: 3rem;
 }
 .podcast-section .cards h3 {
   font-weight: 400;
@@ -276,6 +275,10 @@ header .hamburger {
   align-items: center;
   gap: 6px;
 }
+.episode-section .episodes-card .card .time span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
 /* host-section */
 .host-section {
   margin-bottom: 120px;
@@ -351,9 +354,7 @@ footer .footer-links li a:hover {
   transition: 0.2s ease-in-out;
   transform: scale(1.2);
 }
-footer .footer-links li a:focus{
+footer .footer-links li a:focus {
   color: rgb(186, 121, 0);
   text-decoration: underline;
 }
-
-
