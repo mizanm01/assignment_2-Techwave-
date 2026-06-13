@@ -25,11 +25,9 @@
   header .hamburger {
     display: block;
   }
-
   /* main */
   /* hero-section */
   .hero-section {
-    /* border: 2px solid ; */
     padding: 0;
   }
   .hero-section .hero-image {
@@ -44,12 +42,10 @@
     max-height: 80px;
     left: 50%;
     top: 60%;
-    /* transform: translate(-50%, -50%); */
   }
   .hero-section .hero-image span {
     top: 33%;
     left: 61%;
-    /* transform: translate(-12%, -60%); */
   }
   .hero-section .hero-image span {
     font-size: 16px;
@@ -119,7 +115,6 @@
   .techwave-section .techwave-card .card h3 {
     font-size: 1.375rem;
   }
-
   /* episode-section */
   .episode-section {
     border: 2px solid lime;
@@ -144,7 +139,6 @@
   }
   /* host-section */
   .host-section {
-    /* border: 2px solid red; */
     margin-bottom: 40px;
     margin-top: 20px;
     padding: 0 20px;
@@ -166,6 +160,44 @@
   }
   .host-section .host .host-link {
     justify-content: center;
+  }
+
+  /* footer */
+  footer {
+    padding: 40px 20px;
+    border: 1px solid red;
+    /* background-image: url(../assets/footer-bg.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+  }
+  .footer-title h2 {
+    font-size: 1.8rem;
+  }
+  footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 16px;
+    max-width: 255px;
+    margin: 24px auto;
+  }
+  footer .footer-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .footer-links li a:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+  }
+  footer .footer-links li a:focus {
+    color: rgb(186, 121, 0);
+    text-decoration: underline;
   }
 }
 
@@ -326,6 +358,15 @@
   .host-section .host .host-link {
     justify-content: center;
   }
+
+  /* footer */
+  footer {
+    border: 2px solid rgb(138, 67, 67);
+    padding: 90px 20px;
+  }
+  footer .footer-links{
+    gap: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -477,7 +518,6 @@
     margin-bottom: 8px;
   }
 
-
   /* host-section */
   .host-section {
     padding: 0 30px;
@@ -557,7 +597,7 @@
     gap: 24px;
   }
 
-    /* host-section */
+  /* host-section */
   .host-section {
     padding: 0 30px;
     margin-bottom: 80px;
