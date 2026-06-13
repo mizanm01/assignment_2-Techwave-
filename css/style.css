@@ -2,6 +2,7 @@
   --primary-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(0, 255, 136, 1);
   --color-3: rgba(26, 11, 46, 1);
+  --color-4: rgba(83, 60, 114, 1);
   --primary-bg: rgba(26, 11, 46, 1);
   --secondary-bg: rgba(53, 17, 101, 0.4);
   --bg3: rgba(0, 255, 136, 1);
@@ -26,8 +27,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-.section-title{
-  font-size:3rem;
+.section-title {
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
@@ -169,8 +170,8 @@ header .hamburger {
 }
 
 /* podcasr-section */
-.podcast-section{
-    /* border: 2px solid red; */
+.podcast-section {
+  /* border: 2px solid red; */
 }
 .podcast-section h2 {
   margin-bottom: 16px;
@@ -195,25 +196,25 @@ header .hamburger {
 .podcast-section .cards i {
   color: var(--secondary-color);
 }
-.podcast-section .cards h3{
+.podcast-section .cards h3 {
   font-weight: 400;
   font-size: 16px;
 }
 
 /* techwave-section */
-.techwave-section{
+.techwave-section {
   background: var(--bg-4);
   padding: 120px 0;
 }
 /* .techwave-section .section-title{
   color: rgb(240, 0, 0);
 } */
-.techwave-section .techwave-card{
+.techwave-section .techwave-card {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
 }
-.techwave-section .techwave-card .card{
+.techwave-section .techwave-card .card {
   background: var(--bg-4);
   padding: 40px;
   border-radius: 40px;
@@ -221,29 +222,125 @@ header .hamburger {
   flex-direction: column;
   justify-content: center;
 }
-.techwave-section .techwave-card .card:nth-child(1){
+.techwave-section .techwave-card .card:nth-child(1) {
   grid-column: span 4;
   grid-row: span 2;
 }
-.techwave-section .techwave-card .card:nth-child(2){
+.techwave-section .techwave-card .card:nth-child(2) {
   grid-column: span 8;
 }
-.techwave-section .techwave-card .card:nth-child(3){
+.techwave-section .techwave-card .card:nth-child(3) {
   grid-column: span 8;
 }
-.techwave-section .techwave-card .card:nth-child(4){
+.techwave-section .techwave-card .card:nth-child(4) {
   grid-column: span 8;
 }
-.techwave-section .techwave-card .card:nth-child(5){
+.techwave-section .techwave-card .card:nth-child(5) {
   grid-column: span 4;
 }
 
-.techwave-section .techwave-card .card img{
+.techwave-section .techwave-card .card img {
   max-width: 60px;
   max-height: 60px;
 }
-.techwave-section .techwave-card .card h3{
+.techwave-section .techwave-card .card h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 16px 0;
+}
+
+/* episode-section */
+.episode-section {
+  padding: 120px 0;
+}
+.episode-section .episodes-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.episode-section .episodes-card .card {
+  background: var(--bg-4);
+  border-radius: 24px;
+}
+.episode-section .episodes-card .card iframe {
+  width: 100%;
+  height: 214px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+}
+.episode-section .episodes-card .card > div {
+  padding: 24px;
+}
+.episode-section .episodes-card .card h3 {
+  /* margin-top: 24px; */
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.episode-section .episodes-card .card p {
+  margin-bottom: 12px;
+}
+.episode-section .episodes-card .card .time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* host-section */
+.host-section {
+  /* border: 2px solid red; */
+  margin-bottom: 120px;
+}
+.host-section .host {
+  /* border: 2px solid lime; */
+  background: var(--bg-4);
+  padding: 40px;
+  border-radius: 40px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.host-section .host h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.host-section .host p{
+  margin: 16px 0;
+  line-height: 1.5;
+}
+.host-section .host .host-disc{
+  /* border: 1px solid #fff; */
+}
+.host-section .host .host-link{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.host-section .host .host-link a{
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-4);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+}
+
+
+
+
+
+.footer-title h2{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.footer-title h2 span{
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
